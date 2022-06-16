@@ -1,0 +1,818 @@
+2022-06-16 12:00:40.230  INFO 2580 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 2580 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 12:00:40.266  INFO 2580 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 12:00:42.064  WARN 2580 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.lin.study.mybatis]' package. Please check your configuration.[44]
+2022-06-16 12:00:43.076  INFO 2580 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 12:00:43.093  INFO 2580 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 12:00:43.094  INFO 2580 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 12:00:43.095  INFO 2580 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 12:00:43.246  INFO 2580 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 12:00:43.247  INFO 2580 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2652 ms[290]
+2022-06-16 12:00:43.330  WARN 2580 --- [           main] onConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisApplication': Unsatisfied dependency expressed through field 'buildProperties'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.info.BuildProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}[591]
+2022-06-16 12:00:43.336  INFO 2580 --- [           main] org.apache.catalina.core.StandardService  : Stopping service [Tomcat][173]
+2022-06-16 12:00:43.404  INFO 2580 --- [           main] l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.[136]
+2022-06-16 12:00:43.444 ERROR 2580 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter    : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field buildProperties in com.lin.study.mybatis.MybatisApplication required a bean of type 'org.springframework.boot.info.BuildProperties' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.boot.info.BuildProperties' in your configuration.
+[40]
+2022-06-16 12:02:00.393  INFO 6652 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 6652 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 12:02:00.400  INFO 6652 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 12:02:01.578  WARN 6652 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.lin.study.mybatis]' package. Please check your configuration.[44]
+2022-06-16 12:02:02.500  INFO 6652 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 12:02:02.516  INFO 6652 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 12:02:02.517  INFO 6652 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 12:02:02.518  INFO 6652 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 12:02:02.659  INFO 6652 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 12:02:02.661  INFO 6652 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2156 ms[290]
+2022-06-16 12:02:02.757  INFO 6652 --- [           main] com.lin.study.mybatis.MybatisApplication  : 0.0.1-SNAPSHOT[26]
+2022-06-16 12:02:03.039  INFO 6652 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 12:02:03.161  WARN 6652 --- [           main] onConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class[591]
+2022-06-16 12:02:03.166  INFO 6652 --- [           main] org.apache.catalina.core.StandardService  : Stopping service [Tomcat][173]
+2022-06-16 12:02:03.201  INFO 6652 --- [           main] l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.[136]
+2022-06-16 12:02:03.240 ERROR 6652 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter    : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+[40]
+2022-06-16 12:03:18.557  INFO 12984 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 12984 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 12:03:18.564  INFO 12984 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 12:03:19.708  WARN 12984 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.lin.study.mybatis]' package. Please check your configuration.[44]
+2022-06-16 12:03:20.612  INFO 12984 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 12:03:20.626  INFO 12984 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 12:03:20.627  INFO 12984 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 12:03:20.629  INFO 12984 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 12:03:20.764  INFO 12984 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 12:03:20.765  INFO 12984 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2102 ms[290]
+2022-06-16 12:03:20.862  INFO 12984 --- [           main] com.lin.study.mybatis.MybatisApplication  : 0.0.1-SNAPSHOT[26]
+2022-06-16 12:03:21.170  INFO 12984 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 12:03:21.296  WARN 12984 --- [           main] onConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine suitable jdbc url[591]
+2022-06-16 12:03:21.302  INFO 12984 --- [           main] org.apache.catalina.core.StandardService  : Stopping service [Tomcat][173]
+2022-06-16 12:03:21.334  INFO 12984 --- [           main] l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.[136]
+2022-06-16 12:03:21.373 ERROR 12984 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter    : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+[40]
+2022-06-16 12:04:56.101  INFO 8784 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 8784 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 12:04:56.110  INFO 8784 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 12:04:57.288  WARN 8784 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.lin.study.mybatis]' package. Please check your configuration.[44]
+2022-06-16 12:04:58.250  INFO 8784 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 12:04:58.268  INFO 8784 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 12:04:58.269  INFO 8784 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 12:04:58.271  INFO 8784 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 12:04:58.420  INFO 8784 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 12:04:58.421  INFO 8784 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2228 ms[290]
+2022-06-16 12:04:58.524  INFO 8784 --- [           main] com.lin.study.mybatis.MybatisApplication  : 0.0.1-SNAPSHOT[26]
+2022-06-16 12:04:58.847  INFO 8784 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 12:04:59.711  INFO 8784 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 12:04:59.778  INFO 8784 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 12:04:59.800  INFO 8784 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.533 seconds (JVM running for 5.295)[61]
+2022-06-16 13:39:50.336  INFO 996 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 996 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:39:50.345  INFO 996 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:39:51.502  WARN 996 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.baomidou.mybatisplus.samples.quickstart.mapper]' package. Please check your configuration.[44]
+2022-06-16 13:39:52.381  INFO 996 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:39:52.397  INFO 996 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:39:52.398  INFO 996 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:39:52.400  INFO 996 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:39:52.542  INFO 996 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:39:52.543  INFO 996 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2087 ms[290]
+2022-06-16 13:39:52.643  INFO 996 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[28]
+2022-06-16 13:39:52.649  WARN 996 --- [           main] onConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'baseDemoMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}[591]
+2022-06-16 13:39:52.654  INFO 996 --- [           main] org.apache.catalina.core.StandardService  : Stopping service [Tomcat][173]
+2022-06-16 13:39:52.684  INFO 996 --- [           main] l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.[136]
+2022-06-16 13:39:52.719 ERROR 996 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter    : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field baseDemoMapper in com.lin.study.mybatis.web.controller.DemoController required a bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' in your configuration.
+[40]
+2022-06-16 13:40:28.128  INFO 11292 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 11292 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:40:28.140  INFO 11292 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:40:29.271  WARN 11292 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.baomidou.mybatisplus.samples.quickstart.mapper]' package. Please check your configuration.[44]
+2022-06-16 13:40:30.126  INFO 11292 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:40:30.141  INFO 11292 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:40:30.142  INFO 11292 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:40:30.144  INFO 11292 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:40:30.283  INFO 11292 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:40:30.284  INFO 11292 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1985 ms[290]
+2022-06-16 13:40:30.373  INFO 11292 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[28]
+2022-06-16 13:40:30.378  WARN 11292 --- [           main] onConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'baseDemoMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}[591]
+2022-06-16 13:40:30.383  INFO 11292 --- [           main] org.apache.catalina.core.StandardService  : Stopping service [Tomcat][173]
+2022-06-16 13:40:30.411  INFO 11292 --- [           main] l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.[136]
+2022-06-16 13:40:30.452 ERROR 11292 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter    : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field baseDemoMapper in com.lin.study.mybatis.web.controller.DemoController required a bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' in your configuration.
+[40]
+2022-06-16 13:44:01.209  INFO 14428 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 14428 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:44:01.218  INFO 14428 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:44:02.423  WARN 14428 --- [           main] o.m.spring.mapper.ClassPathMapperScanner  : No MyBatis mapper was found in '[com.baomidou.mybatisplus.samples.quickstart.mapper]' package. Please check your configuration.[44]
+2022-06-16 13:44:03.450  INFO 14428 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:44:03.466  INFO 14428 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:44:03.467  INFO 14428 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:44:03.468  INFO 14428 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:44:03.625  INFO 14428 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:44:03.625  INFO 14428 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2305 ms[290]
+2022-06-16 13:44:03.723  INFO 14428 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[28]
+2022-06-16 13:44:03.729  WARN 14428 --- [           main] onConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoController': Unsatisfied dependency expressed through field 'baseDemoMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}[591]
+2022-06-16 13:44:03.733  INFO 14428 --- [           main] org.apache.catalina.core.StandardService  : Stopping service [Tomcat][173]
+2022-06-16 13:44:03.779  INFO 14428 --- [           main] l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.[136]
+2022-06-16 13:44:03.822 ERROR 14428 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter    : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field baseDemoMapper in com.lin.study.mybatis.web.controller.DemoController required a bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.lin.study.mybatis.sql.mapper.BaseDemoMapper' in your configuration.
+[40]
+2022-06-16 13:51:39.519  INFO 6768 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 6768 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:51:39.527  INFO 6768 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:51:41.563  INFO 6768 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:51:41.578  INFO 6768 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:51:41.579  INFO 6768 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:51:41.580  INFO 6768 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:51:41.714  INFO 6768 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:51:41.715  INFO 6768 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2090 ms[290]
+2022-06-16 13:51:41.809  INFO 6768 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 13:51:42.883  INFO 6768 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 13:51:43.104  INFO 6768 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:51:43.163  INFO 6768 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 13:51:43.182  INFO 6768 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.517 seconds (JVM running for 5.362)[61]
+2022-06-16 13:52:00.377  INFO 6768 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 13:52:00.378  INFO 6768 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 13:52:00.380  INFO 6768 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet         : Completed initialization in 2 ms[547]
+2022-06-16 13:52:07.410  INFO 6768 --- [nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 13:52:07.727  INFO 6768 --- [nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 13:52:07.858 ERROR 6768 --- [nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]     : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'
+### The error may exist in com/lin/study/mybatis/sql/mapper/BaseDemoMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,car_id,car_name,search,create_time,update_time  FROM base_a
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'] with root cause[175]
+java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy56.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at com.lin.study.mybatis.web.controller.DemoController.demo1(DemoController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-06-16 13:52:11.059 ERROR 6768 --- [nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]     : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'
+### The error may exist in com/lin/study/mybatis/sql/mapper/BaseDemoMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,car_id,car_name,search,create_time,update_time  FROM base_a
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'] with root cause[175]
+java.sql.SQLSyntaxErrorException: Unknown column 'search' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy56.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at com.lin.study.mybatis.web.controller.DemoController.demo1(DemoController.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-06-16 13:53:15.573  INFO 10064 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 10064 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:53:15.582  INFO 10064 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:53:17.586  INFO 10064 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:53:17.603  INFO 10064 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:53:17.604  INFO 10064 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:53:17.605  INFO 10064 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:53:17.741  INFO 10064 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:53:17.741  INFO 10064 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2043 ms[290]
+2022-06-16 13:53:17.849  INFO 10064 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 13:53:18.992  INFO 10064 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 13:53:19.217  INFO 10064 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:53:19.266  INFO 10064 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 13:53:19.290  INFO 10064 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.592 seconds (JVM running for 5.42)[61]
+2022-06-16 13:53:37.816  INFO 10064 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 13:53:37.818  INFO 10064 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 13:53:37.827  INFO 10064 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 9 ms[547]
+2022-06-16 13:53:37.919  INFO 10064 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 13:53:38.229  INFO 10064 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 13:58:05.262  INFO 10180 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 10180 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:58:05.271  INFO 10180 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:58:07.228  INFO 10180 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:58:07.244  INFO 10180 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:58:07.245  INFO 10180 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:58:07.246  INFO 10180 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:58:07.387  INFO 10180 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:58:07.388  INFO 10180 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2014 ms[290]
+2022-06-16 13:58:07.481  INFO 10180 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 13:58:08.565  INFO 10180 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 13:58:08.791  INFO 10180 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:58:08.848  INFO 10180 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 13:58:08.867  INFO 10180 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.43 seconds (JVM running for 5.149)[61]
+2022-06-16 13:58:18.726  INFO 10180 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 13:58:18.727  INFO 10180 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 13:58:18.728  INFO 10180 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 13:58:18.784  WARN 10180 --- [nio-8080-exec-1] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "aa"][208]
+2022-06-16 13:58:23.184  WARN 10180 --- [nio-8080-exec-2] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "aa"][208]
+2022-06-16 13:58:26.400  INFO 10180 --- [nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 13:58:26.693  INFO 10180 --- [nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 13:59:56.486  INFO 6876 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 6876 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 13:59:56.493  INFO 6876 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 13:59:58.615  INFO 6876 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 13:59:58.632  INFO 6876 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 13:59:58.633  INFO 6876 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 13:59:58.634  INFO 6876 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 13:59:58.802  INFO 6876 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 13:59:58.803  INFO 6876 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2200 ms[290]
+2022-06-16 13:59:58.902  INFO 6876 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:00:00.129  INFO 6876 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:00:00.370  INFO 6876 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:00:00.427  INFO 6876 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:00:00.441  INFO 6876 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.877 seconds (JVM running for 5.812)[61]
+2022-06-16 14:00:07.226  INFO 6876 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:00:07.226  INFO 6876 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:00:07.228  INFO 6876 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:00:07.274  WARN 6876 --- [nio-8080-exec-1] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idStr' for method parameter type String is not present][208]
+2022-06-16 14:00:28.799  WARN 6876 --- [nio-8080-exec-2] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idStr' for method parameter type String is not present][208]
+2022-06-16 14:00:30.925  WARN 6876 --- [nio-8080-exec-3] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idStr' for method parameter type String is not present][208]
+2022-06-16 14:00:50.420  WARN 6876 --- [nio-8080-exec-4] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idStr' for method parameter type String is not present][208]
+2022-06-16 14:00:52.166  WARN 6876 --- [nio-8080-exec-5] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idStr' for method parameter type String is not present][208]
+2022-06-16 14:01:51.901  INFO 1052 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 1052 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:01:51.909  INFO 1052 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:01:54.117  INFO 1052 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:01:54.133  INFO 1052 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:01:54.134  INFO 1052 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:01:54.135  INFO 1052 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:01:54.299  INFO 1052 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:01:54.300  INFO 1052 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2274 ms[290]
+2022-06-16 14:01:54.418  INFO 1052 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:01:55.611  INFO 1052 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:01:55.876  INFO 1052 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:01:55.943  INFO 1052 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:01:55.975  INFO 1052 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 5.009 seconds (JVM running for 5.82)[61]
+2022-06-16 14:02:02.960  INFO 1052 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:02:02.961  INFO 1052 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:02:02.963  INFO 1052 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:02:09.625 ERROR 1052 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]     : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "afa"] with root cause[175]
+java.lang.NumberFormatException: For input string: "afa"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Long.parseLong(Long.java:692)
+	at java.base/java.lang.Long.valueOf(Long.java:1144)
+	at com.lin.study.mybatis.web.controller.DemoController.demo1Param(DemoController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-06-16 14:04:44.435  INFO 11692 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 11692 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:04:44.444  INFO 11692 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:04:46.416  INFO 11692 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:04:46.433  INFO 11692 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:04:46.434  INFO 11692 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:04:46.435  INFO 11692 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:04:46.571  INFO 11692 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:04:46.573  INFO 11692 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2031 ms[290]
+2022-06-16 14:04:46.670  INFO 11692 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:04:47.762  INFO 11692 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:04:47.978  INFO 11692 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:04:48.054  INFO 11692 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:04:48.070  INFO 11692 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.471 seconds (JVM running for 5.223)[61]
+2022-06-16 14:04:56.481  INFO 11692 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:04:56.482  INFO 11692 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:04:56.484  INFO 11692 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 2 ms[547]
+2022-06-16 14:04:56.540  WARN 11692 --- [nio-8080-exec-1] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "afa"][208]
+2022-06-16 14:05:01.503  INFO 11692 --- [nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:05:01.799  INFO 11692 --- [nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:05:39.084  INFO 7872 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 7872 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:05:39.095  INFO 7872 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:05:41.123  INFO 7872 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:05:41.137  INFO 7872 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:05:41.138  INFO 7872 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:05:41.140  INFO 7872 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:05:41.284  INFO 7872 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:05:41.285  INFO 7872 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2098 ms[290]
+2022-06-16 14:05:41.376  INFO 7872 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:05:42.511  INFO 7872 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:05:42.739  INFO 7872 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:05:42.793  INFO 7872 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:05:42.810  INFO 7872 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.562 seconds (JVM running for 5.415)[61]
+2022-06-16 14:05:49.989  INFO 7872 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:05:49.990  INFO 7872 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:05:49.991  INFO 7872 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:05:50.047 ERROR 7872 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]     : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class com.baomidou.mybatisplus.core.conditions.query.QueryWrapper cannot be cast to class java.util.List (com.baomidou.mybatisplus.core.conditions.query.QueryWrapper is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')] with root cause[175]
+java.lang.ClassCastException: class com.baomidou.mybatisplus.core.conditions.query.QueryWrapper cannot be cast to class java.util.List (com.baomidou.mybatisplus.core.conditions.query.QueryWrapper is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+	at com.lin.study.mybatis.web.controller.DemoController.demo1Column(DemoController.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-06-16 14:08:47.868  INFO 10936 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 10936 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:08:47.883  INFO 10936 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:08:50.223  INFO 10936 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:08:50.241  INFO 10936 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:08:50.242  INFO 10936 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:08:50.244  INFO 10936 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:08:50.394  INFO 10936 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:08:50.396  INFO 10936 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2393 ms[290]
+2022-06-16 14:08:50.490  INFO 10936 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:08:51.798  INFO 10936 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:08:52.097  INFO 10936 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:08:52.156  INFO 10936 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:08:52.173  INFO 10936 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 5.261 seconds (JVM running for 6.151)[61]
+2022-06-16 14:08:58.398  INFO 10936 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:08:58.399  INFO 10936 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:08:58.401  INFO 10936 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 2 ms[547]
+2022-06-16 14:08:58.535  INFO 10936 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:08:58.866  INFO 10936 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:10:36.069  INFO 15012 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 15012 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:10:36.075  INFO 15012 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:10:38.129  INFO 15012 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:10:38.146  INFO 15012 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:10:38.146  INFO 15012 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:10:38.147  INFO 15012 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:10:38.293  INFO 15012 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:10:38.295  INFO 15012 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2126 ms[290]
+2022-06-16 14:10:38.393  INFO 15012 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:10:39.454  INFO 15012 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:10:39.652  INFO 15012 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:10:39.709  INFO 15012 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:10:39.726  INFO 15012 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.568 seconds (JVM running for 5.334)[61]
+2022-06-16 14:10:51.520  INFO 15012 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:10:51.521  INFO 15012 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:10:51.523  INFO 15012 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:10:51.569  WARN 15012 --- [nio-8080-exec-1] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'id' for method parameter type Long is not present][208]
+2022-06-16 14:11:04.991  WARN 15012 --- [nio-8080-exec-2] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'id' for method parameter type Long is not present][208]
+2022-06-16 14:11:11.748  INFO 12148 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 12148 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:11:11.755  INFO 12148 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:11:13.765  INFO 12148 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:11:13.781  INFO 12148 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:11:13.782  INFO 12148 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:11:13.783  INFO 12148 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:11:13.925  INFO 12148 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:11:13.926  INFO 12148 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2069 ms[290]
+2022-06-16 14:11:14.042  INFO 12148 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:11:15.284  INFO 12148 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:11:15.513  INFO 12148 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:11:15.563  INFO 12148 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:11:15.619  INFO 12148 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.715 seconds (JVM running for 5.481)[61]
+2022-06-16 14:11:21.703  INFO 12148 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:11:21.704  INFO 12148 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:11:21.706  INFO 12148 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 2 ms[547]
+2022-06-16 14:11:21.869  INFO 12148 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:11:22.184  INFO 12148 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:13:00.244  INFO 4912 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 4912 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:13:00.258  INFO 4912 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:13:02.318  INFO 4912 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:13:02.333  INFO 4912 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:13:02.334  INFO 4912 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:13:02.335  INFO 4912 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:13:02.476  INFO 4912 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:13:02.478  INFO 4912 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2127 ms[290]
+2022-06-16 14:13:02.577  INFO 4912 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:13:03.648  INFO 4912 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:13:03.847  INFO 4912 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:13:03.883  INFO 4912 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:13:03.911  INFO 4912 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.557 seconds (JVM running for 5.419)[61]
+2022-06-16 14:13:11.174  INFO 4912 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:13:11.175  INFO 4912 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:13:11.180  INFO 4912 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 5 ms[547]
+2022-06-16 14:13:11.327  INFO 4912 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:13:11.668  INFO 4912 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:13:58.018  INFO 14332 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 14332 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:13:58.025  INFO 14332 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:14:00.208  INFO 14332 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:14:00.223  INFO 14332 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:14:00.224  INFO 14332 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:14:00.225  INFO 14332 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:14:00.370  INFO 14332 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:14:00.371  INFO 14332 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2242 ms[290]
+2022-06-16 14:14:00.473  INFO 14332 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:14:01.645  INFO 14332 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:14:01.901  INFO 14332 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:14:01.945  INFO 14332 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:14:01.970  INFO 14332 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.829 seconds (JVM running for 5.712)[61]
+2022-06-16 14:14:06.764  INFO 14332 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:14:06.765  INFO 14332 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:14:06.767  INFO 14332 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 2 ms[547]
+2022-06-16 14:14:06.928  INFO 14332 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:14:07.240  INFO 14332 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:16:20.289  INFO 2580 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 2580 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:16:20.298  INFO 2580 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:16:22.347  INFO 2580 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:16:22.362  INFO 2580 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:16:22.363  INFO 2580 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:16:22.364  INFO 2580 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:16:22.505  INFO 2580 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:16:22.506  INFO 2580 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2119 ms[290]
+2022-06-16 14:16:22.605  INFO 2580 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:16:23.679  INFO 2580 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:16:23.881  INFO 2580 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:16:23.944  INFO 2580 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:16:23.969  INFO 2580 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.545 seconds (JVM running for 5.283)[61]
+2022-06-16 14:17:35.982  INFO 12656 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 12656 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:17:35.990  INFO 12656 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:17:38.192  INFO 12656 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:17:38.209  INFO 12656 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:17:38.210  INFO 12656 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:17:38.211  INFO 12656 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:17:38.373  INFO 12656 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:17:38.375  INFO 12656 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2249 ms[290]
+2022-06-16 14:17:38.469  INFO 12656 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:17:39.851  INFO 12656 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:17:40.858  INFO 12656 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:17:40.906  INFO 12656 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:17:40.933  INFO 12656 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 5.861 seconds (JVM running for 6.619)[61]
+2022-06-16 14:17:49.901  INFO 12656 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:17:49.902  INFO 12656 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:17:49.903  INFO 12656 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:17:50.032  INFO 12656 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:17:50.346  INFO 12656 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:24:58.950  INFO 928 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 928 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:24:58.958  INFO 928 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:25:00.930  INFO 928 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:25:00.945  INFO 928 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:25:00.946  INFO 928 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:25:00.947  INFO 928 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:25:01.082  INFO 928 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:25:01.083  INFO 928 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2018 ms[290]
+2022-06-16 14:25:01.186  INFO 928 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:25:02.262  INFO 928 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:25:02.486  INFO 928 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:25:02.553  INFO 928 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:25:02.570  INFO 928 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.481 seconds (JVM running for 5.215)[61]
+2022-06-16 14:25:14.559  INFO 928 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:25:14.560  INFO 928 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:25:14.561  INFO 928 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:25:14.615  WARN 928 --- [nio-8080-exec-1] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "inster"][208]
+2022-06-16 14:25:18.658  WARN 928 --- [nio-8080-exec-2] .s.w.s.m.s.DefaultHandlerExceptionResolver: Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "install"][208]
+2022-06-16 14:25:27.387  INFO 928 --- [nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:25:27.704  INFO 928 --- [nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:26:05.219  INFO 1464 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 1464 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:26:05.226  INFO 1464 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:26:07.323  INFO 1464 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:26:07.339  INFO 1464 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:26:07.340  INFO 1464 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:26:07.341  INFO 1464 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:26:07.488  INFO 1464 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:26:07.489  INFO 1464 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2158 ms[290]
+2022-06-16 14:26:07.591  INFO 1464 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:26:08.870  INFO 1464 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:26:09.086  INFO 1464 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:26:09.149  INFO 1464 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:26:09.164  INFO 1464 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.769 seconds (JVM running for 5.494)[61]
+2022-06-16 14:28:30.494  INFO 7020 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 7020 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:28:30.501  INFO 7020 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:28:32.541  INFO 7020 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:28:32.556  INFO 7020 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:28:32.557  INFO 7020 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:28:32.557  INFO 7020 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:28:32.695  INFO 7020 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:28:32.695  INFO 7020 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2093 ms[290]
+2022-06-16 14:28:32.787  INFO 7020 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:28:33.888  INFO 7020 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:28:34.092  INFO 7020 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:28:34.133  INFO 7020 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:28:34.156  INFO 7020 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.533 seconds (JVM running for 5.404)[61]
+2022-06-16 14:28:40.401  INFO 7020 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:28:40.402  INFO 7020 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:28:40.407  INFO 7020 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 4 ms[547]
+2022-06-16 14:28:40.499  INFO 7020 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:28:40.819  INFO 7020 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]
+2022-06-16 14:32:29.513  INFO 11756 --- [           main] com.lin.study.mybatis.MybatisApplication  : Starting MybatisApplication using Java 11.0.14 on DESKTOP-KIM48N3 with PID 11756 (D:\github\lin557\mybatis-plus-demo\target\classes started by lin in D:\github\lin557\mybatis-plus-demo)[55]
+2022-06-16 14:32:29.521  INFO 11756 --- [           main] com.lin.study.mybatis.MybatisApplication  : No active profile set, falling back to 1 default profile: "default"[645]
+2022-06-16 14:32:31.560  INFO 11756 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)[108]
+2022-06-16 14:32:31.576  INFO 11756 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Initializing ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:32:31.577  INFO 11756 --- [           main] org.apache.catalina.core.StandardService  : Starting service [Tomcat][173]
+2022-06-16 14:32:31.577  INFO 11756 --- [           main] org.apache.catalina.core.StandardEngine   : Starting Servlet engine: [Apache Tomcat/9.0.63][173]
+2022-06-16 14:32:31.723  INFO 11756 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring embedded WebApplicationContext[173]
+2022-06-16 14:32:31.725  INFO 11756 --- [           main] b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2102 ms[290]
+2022-06-16 14:32:31.821  INFO 11756 --- [           main] com.lin.study.mybatis.MybatisApplication  : 22.6.16[29]
+2022-06-16 14:32:32.883  INFO 11756 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping     : Adding welcome page template: index[57]
+2022-06-16 14:32:33.085  INFO 11756 --- [           main] o.apache.coyote.http11.Http11NioProtocol  : Starting ProtocolHandler ["http-nio-8080"][173]
+2022-06-16 14:32:33.132  INFO 11756 --- [           main] o.s.b.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''[220]
+2022-06-16 14:32:33.150  INFO 11756 --- [           main] com.lin.study.mybatis.MybatisApplication  : Started MybatisApplication in 4.497 seconds (JVM running for 5.241)[61]
+2022-06-16 14:32:41.560  INFO 11756 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]        : Initializing Spring DispatcherServlet 'dispatcherServlet'[173]
+2022-06-16 14:32:41.561  INFO 11756 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Initializing Servlet 'dispatcherServlet'[525]
+2022-06-16 14:32:41.564  INFO 11756 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet         : Completed initialization in 1 ms[547]
+2022-06-16 14:32:41.659  INFO 11756 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Starting...[110]
+2022-06-16 14:32:41.979  INFO 11756 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource        : HikariPool-1 - Start completed.[123]

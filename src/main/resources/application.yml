@@ -1,0 +1,72 @@
+# ------- web服务配置 -----
+
+# 服务端口号
+server:
+  port: 8080
+# 以Tomcat为web容器时的字符编码
+#server.tomcat.uri-encoding=UTF-8
+# http头大小
+  max-http-header-size: 8192
+
+# ------- mybatis配置 -----
+
+# mybatis配置 springboot mybatis约定的格式
+mybatis:
+  config-location: classpath:mybatis-config.xml
+# mybatis Mapper.xml路径 因为maven打包时不会打包xml文件到 所以xml单独到资源文件夹存放
+  mapper-locations: classpath:mapping/*Mapper.xml
+# mybatis.type-aliases-package: com.dvr.mapper
+# 配置驼峰命名规则自动转换 将下划线转为驼峰 如字段  user_id 转为pojo中的 userId
+# mybatis-config.xml 中已配置，这里不需要再额外开启
+#mybatis.configuration.map-underscore-to-camel-case: true
+#mybatis.configuration.mapUnderscoreToCamelCase=true
+
+
+# ------- 数据库配置 -----
+# 数据库配置 springboot 约定的格式 spring.datasource.*
+# 账号
+spring:
+  mvc:
+   pathmatch:
+     # url 不区分大小写
+     matching-strategy: ant_path_matcher
+  jackson:
+    # 驼峰转下划线
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    # 账号
+    username: root
+    # 密码
+    password: 123456
+    # 驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # url
+    url: jdbc:mysql://127.0.0.1:3306/demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    
+    # Hikari连接池的设置
+    # Hikari 时间单位都是毫秒
+    type: com.zaxxer.hikari.HikariDataSource
+# 连接池名字
+# spring.datasource.hikari.pool-name=MyHikariCP
+# 最小空闲连接数量
+    hikari:
+      minimum-idle: 2
+# 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 600000
+# 连接池最大连接数，默认是10
+      maximum-pool-size: 5
+# 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+# 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+# 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+# 获得连接以确认与数据库的连接是否存在
+      connection-test-query: SELECT 1
+      
+# ----- Springboot 日志 默认使用Logback, 当然也可以使用其它如log4j log4j2等 ----
+
+# 日志使用logback-spring.xml 不再需要下边的配置
+# 自定义配置 如定义辆出文件名等
+logging:
+  config: classpath:logback-spring.xml
